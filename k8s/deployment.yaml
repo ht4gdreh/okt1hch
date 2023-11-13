@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: okmi2
+  name: okt1hch
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: okmi2
+      app: okt1hch
   template:
     metadata:
       labels:
-        app: okmi2
+        app: okt1hch
     spec:
       containers:
-      - image: okteto.dev/okmi2:latest
-        name: okmi2
+      - image: okteto.dev/okt1hch:latest
+        name: okt1hch
         ports:
         - containerPort: 8080
         env:
@@ -25,20 +25,20 @@ spec:
         - name: ParameterSSENCYPT
           value: "chacha20-ietf-poly1305"
         - name: Vless_UUID
-          value: "62391c87-553c-4260-af28-cd0827554c54"
+          value: "3812c417-03ed-4576-9406-880a0321b778"
         - name: Vless_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-vless"
+          value: "/3812c417-03ed-4576-9406-880a0321b778-vless"
         - name: Vmess_UUID
-          value: "62391c87-553c-4260-af28-cd0827554c54"
+          value: "3812c417-03ed-4576-9406-880a0321b778"
         - name: Vmess_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-vmess"
+          value: "/3812c417-03ed-4576-9406-880a0321b778-vmess"
         - name: Trojan_UUID
-          value: "62391c87-553c-4260-af28-cd0827554c54"
+          value: "3812c417-03ed-4576-9406-880a0321b778"
         - name: Trojan_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-trojan"
+          value: "/3812c417-03ed-4576-9406-880a0321b778-trojan"
         - name: SS_UUID
-          value: "62391c87-553c-4260-af28-cd0827554c54"
+          value: "3812c417-03ed-4576-9406-880a0321b778"
         - name: SS_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-ss"
+          value: "/3812c417-03ed-4576-9406-880a0321b778-ss"
         - name: Share_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-share"
+          value: "/3812c417-03ed-4576-9406-880a0321b778-share"
